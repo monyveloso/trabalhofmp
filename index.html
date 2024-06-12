@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMP</title>
+    <style>
+         body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            transition: background-color 0.5s ease;
+            text-align: center;
+        }
+        header {
+            background-color: #9c3026;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #ff9f51;
+            text-align: center;
+            padding: 10px 0;
+            transition: background-color 0.5s ease;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #333;
+        }
+        main {
+            padding: 20px;
+            background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExczg0M3JrZHc3b2tsNnhtOXRwb2V0OGc5bDhoY3g1bno5bnFidHBzbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/t2aAdTgnU9Ie6jvG0W/giphy.webp"); /* Insira o caminho para sua imagem aqui */
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh; /* Garante que a imagem cubra toda a altura da tela */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.9); /* Adiciona um fundo branco transparente para melhorar a legibilidade do conteúdo */
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            
+        }
+        h2 {
+            color: #313030;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #000000;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #9c3026;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Efeito de transição suave */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .fade-in.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FMP</h1>
+    </header>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#contato">CONTATO</a>
+        <a href="#sobre">SOBRE</a>
+    </nav>
+    <main>
+        <!-- Página Home -->
+        <section id="home" class="fade-in active">
+            <h2>Bem-Vindo à FMP</h2>
+            <p>A Faculdade Municipal de Palhoça é uma instituição de ensino superior do Município de Palhoça, situado no estado de Santa Catarina. Ela possui natureza de autarquia municipal, de acordo com o art. 1º da Lei Municipal nº 2.182/2005, sendo os seus cursos de graduação gratuitos.
+                Mais de 1.000 alunos matriculados,
+                mais de 50 docentes,
+                1 unidade no estado de Santa Catarina.
+            </p>
+            <!-- Inserir imagem, GIF ou vídeo aqui -->
+        </section>
+
+        <!-- Página Contato -->
+        <section id="contato" class="fade-in" style="display: none;">
+            <body>
+                <header>
+                    <h1>Meu Currículo</h1>
+                </header>
+                <main>
+                    <div id="main-content">
+                        <img id="profile-image" src="https://i.im.ge/2024/06/12/Kc8PJY.dc4bbb44-a678-4714-95f0-e7855ae6aaa9-1.jpeg" alt="Foto de Perfil">
+                        <div></div>
+                    </div>
+                    <div class="section">
+                        <br>
+                        <h2>Dados Pessoais</h2>
+                        <p>Nome: Moniély Amaral Veloso</p>
+                        <p>Email: moniely.veloso@aluno.fmpsc.edu.br</p>
+                        <p>Telefone: (48) 99803-3959</p>
+                    </div>
+            
+                    <div class="section">
+                        <h2>Experiência Profissional</h2>
+                        <div class="experience">
+                            <h3>Jovem Aprendiz</h3>
+                            <p>Lojas Americanas</p>
+                            <p>Período: Fevereiro 2022 - Setembro 2022</p>
+                            <p>Repositora</p>
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <h2>Educação</h2>
+                        <p>Ensino médio concluído- Escola Cívico Militar Prof. Ângelo Cascaes Tancredo- 2023</p>
+                        <p>Cursando ADS- FMP- conclusão: 2026</p>
+                        <p>Cursando curso de língua inglesa- Wizard</p>   
+                    </div>
+                </main>
+            </body>
+        </section>
+
+        <!-- Página Sobre -->
+        <section id="sobre" class="fade-in" style="display: none;">
+            <h2>Sobre</h2>
+            <p> A FMP disponibiliza os cursos de graduação em Administração, Pedagogia, processos gerenciais e Analise e Desenvolvimento de Sistemas. Em relação aos cursos de pós-graduação, a FMP oferece Gestão e Docência na Educação e Integral, Planejamento e Gestão de Eventos, Psicopedagogia Institucional, Gestão de Pessoas, Gestão Pública e Educação Infantil - todas as especializações apresentam duração de dois anos de formação.
+
+                Entre os diferenciais da FMP, estão:
+                A instituição foi avaliada com nota 3 (escala até 5) no Índice Geral de Cursos (IGC), do MEC, em 2019.
+                
+                O curso de Pedagogia da FMP recebeu nota 4 (escala até 5) no indicador de Conceito Preliminar de Curso (CPC), em 2017</p>
+            <!-- Inserir informações sobre cursos ou programas aqui -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FMP</p>
+    </footer>
+
+    <button id="contatoBtn">Ir para Contato</button>
+
+    <script>
+        // Adiciona animação de fade-in quando uma seção é ativada
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substr(1);
+                document.querySelectorAll('section.fade-in').forEach(section => {
+                    if (section.id === targetId) {
+                        section.classList.add('active');
+                        section.style.display = 'block';
+                    } else {
+                        section.classList.remove('active');
+                        setTimeout(() => {
+                            section.style.display = 'none';
+                        }, 500);
+                    }
+                });
+            });
+        });
+
+        // Redireciona para a página Contato quando o botão "Ir para Contato" é clicado
+        document.getElementById('contatoBtn').addEventListener('click', function() {
+            document.querySelectorAll('section.fade-in').forEach(section => {
+                if (section.id === 'contato') {
+                    section.classList.add('active');
+                    section.style.display = 'block';
+                } else {
+                    section.classList.remove('active');
+                    setTimeout(() => {
+                        section.style.display = 'none';
+                    }, 500);
+                }
+            });
+        });
+
+        // Redireciona para a página inicial quando o botão "Home" é clicado
+        document.querySelector('nav a[href="#home"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelectorAll('section.fade-in').forEach(section => {
+                if (section.id === 'home') {
+                    section.classList.add('active');
+                    section.style.display = 'block';
+                } else {
+                    section.classList.remove('active');
+                    setTimeout(() => {
+                        section.style.display = 'none';
+                    }, 500);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
